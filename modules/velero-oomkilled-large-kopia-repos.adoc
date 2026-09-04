@@ -20,7 +20,7 @@ To resolve this issue, identify the peak memory usage and increase the memory li
 
 . Check the Velero logs around the time of the `OOMKilled` event for repository-open or index-loading activity.
 
-. Note the approximate maximum memory usage observed for the Velero pod by using a command such as `oc top pods`.
+. Note the approximate maximum memory usage observed for the Velero pod by using a command such as `oc adm top pod` or `kubectl top pod`.
 
 . Edit the `DataProtectionApplication` CR:
 +
